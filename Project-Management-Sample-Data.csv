@@ -1,0 +1,47 @@
+Project_name,Task_name,Assigned_to,Start_date,Days_required,End_date,Progress
+Marketing,Market Research,Alice,01-01-24,13,14-01-24,78%
+Marketing,Content Creation,Bob,14-01-24,14,28-01-24,100%
+Marketing,Social Media Planning,Charlie,28-01-24,22,19-02-24,45%
+Marketing,Campaign Analysis,Daisy,18-02-24,25,14-03-24,0%
+Product Dev,Prototype Development,Ethan,02-01-24,18,20-01-24,100%
+Product Dev,Quality Assurance,Fiona,20-01-24,10,30-01-24,78%
+Product Dev,User Interface Design,Gabriel,04-02-24,25,29-02-24,0%
+Customer Svc,Service Improvement,Hannah,01-02-24,22,23-02-24,100%
+Customer Svc,Ticket Resolution,Ian,24-02-24,25,20-03-24,100%
+Customer Svc,Customer Feedback,Julia,21-03-24,30,20-04-24,0%
+Financial,Budget Analysis,Kevin,02-02-24,22,24-02-24,10%
+Financial,Financial Reporting,Mark,13-02-24,21,09-02-24,78%
+Financial,Investment Planning,Mark,19-03-24,25,13-04-24,100%
+Research,Market Trends Analysis,Nathan,02-01-24,23,25-01-24,50%
+Research,Data Collection,Olivia,26-01-24,32,27-02-24,0%
+Research,Research Paper Writing,Peter,28-02-24,27,26-03-24,0%
+Development,Software Development,Quinn,02-01-24,36,07-02-24,100%
+Development,Feature Enhancement,Rachel,08-02-24,34,13-03-24,0%
+Development,Code Review,Sam,14-03-24,30,13-04-24,0%
+Production,Manufacturing,Tim,03-01-24,47,19-02-24,30%
+Production,Quality Control,Ursula,17-02-24,27,15-03-24,0%
+Production,Packaging Design,Victor,14-03-24,22,05-04-24,0%
+Sales,Lead Generation,Wendy,03-01-24,60,03-03-24,70%
+Sales,Client Meetings,Xavier,06-01-24,20,26-01-24,78%
+Sales,Contract Negotiation,Yvette,03-02-24,35,09-03-24,0%
+Support,Technical Support,Zoe,01-01-24,25,26-01-24,100%
+Support,Bug Fixes,Aaron,27-01-24,31,27-02-24,100%
+Support,Software Updates,Bella,02-03-24,22,24-03-24,0%
+Operations,Process Optimization,Calvin,03-01-24,30,02-02-24,40%
+Operations,Inventory Management,Diane,03-02-24,25,28-02-24,0%
+Operations,Facility Maintenance,Edward,29-02-24,20,20-03-24,0%
+Consulting,Strategic Planning,Fiona,02-01-24,35,06-02-24,60%
+Consulting,Market Expansion,Gary,02-02-24,32,05-03-24,0%
+Consulting,Client Advisory,Helen,06-03-24,25,31-03-24,0%
+Training,Employee Training,Isaac,04-01-24,27,31-01-24,80%
+Training,Certification Programs,Jane,28-01-24,30,27-02-24,0%
+Training,Skill Development,Kyle,28-02-24,22,21-03-24,0%
+Events,Event Planning,Laura,03-01-24,25,28-01-24,30%
+Events,Conference Management,Mike,03-02-24,20,23-02-24,0%
+Events,Sponsorship Coordinatio,n Nancy,24-02-24,35,30-03-24,0%
+Logistics,Supply Chain Management,Oscar,03-01-24,25,28-01-24,50%
+Logistics,Transportation Planning,Patricia,29-01-24,30,28-02-24,100%
+Logistics,Inventory Optimization,Quentin,29-03-24,20,18-04-24,0%
+Engineering,Product Design,Rachel,02-01-24,25,27-01-24,20%
+Engineering,System Integration,Sam,02-02-24,22,24-02-24,0%
+Engineering,Prototype Testing,Tom,23-02-24,27,21-03-24,0%
