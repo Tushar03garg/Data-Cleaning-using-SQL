@@ -1,1 +1,2 @@
 # Data Cleaning using SQL
+This repository showcases a practical data cleaning project built entirely with SQL. Follow along with the SQL scripts as they transform a raw, messy dataset into a clean, analysis-ready format. The project highlights crucial steps like data validation, outlier detection, and data type conversion, serving as a hands-on guide to preparing data for any downstream analysis or visualization.
