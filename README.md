@@ -1,1 +1,1 @@
-# sql-practice
+# Data Cleaning using SQL
