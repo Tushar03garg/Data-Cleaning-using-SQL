@@ -1,0 +1,133 @@
+
+CREATE TABLE project_managemnt (
+    Project_name VARCHAR(50),
+	Task_name VARCHAR(100),
+	Assigned_to VARCHAR(50),
+    Start_date DATE,
+    Days_required INT,
+	End_date DATE,
+	Progress VARCHAR(10)
+);
+
+SET datestyle = 'DMY';
+
+COPY project_managemnt(Project_name, Task_name, Assigned_to, Start_date, Days_required, End_date, Progress)
+FROM 'C:/Project-Management-Sample-Data.csv'
+DELIMITER ','
+CSV HEADER;
+
+
+
+/*Q1 : Show all columns from the table.*/
+
+select * from project_managemnt
+
+/* Q2 : Retrieve only the project names and their start dates. */
+
+select project_name, start_date 
+from project_managemnt
+
+/* Q3 : Find all projects that started after 2022-01-01.*/
+
+select * from project_managemnt
+where start_date >= '2022-01-01'
+
+/*Q4 : Get the total number of projects in the dataset. */
+
+select count(*) as total_project 
+from project_managemnt
+
+/*Q5 : Count how many projects are currently marked as "Completed" */
+
+select * from project_managemnt
+where progress = '100%'
+
+/*Q6 : List the distinct project name.*/
+
+select distinct(project_name) from project_managemnt
+
+/* Q7: Show all tasks assigned to Alice. */
+
+select * from project_managemnt
+where assigned_to = 'Alice'
+
+/*Q8: List all tasks where Progress is less than 50%.*/
+
+SELECT *
+FROM project_managemnt
+WHERE CAST(REPLACE(progress, '%', '') AS DECIMAL) < 50;
+
+
+/*Q9 : Retrieve the names of all projects that have tasks ending in February 2024. */
+
+select project_name from project_managemnt
+where end_date between '2024-02-01' and '2024-02-28'
+
+/*Q10 : Show tasks where Days_required is more than 30. */
+
+select task_name from project_managemnt
+where days_required > 30
+
+/* Q11 : Find all tasks in the Financial project that are completed*/
+
+select task_name from project_managemnt
+where project_name = 'Financial' and progress = '100%'
+
+/* Q12 : Sort all tasks by their Start_date */
+
+select * from project_managemnt
+order by Start_date
+
+
+/*Q13 : Find the total number of tasks in each project */
+
+select project_name, count(*) as total_task from project_managemnt
+group by project_name
+
+/* Q14 : List all distinct people assigned tasks */
+
+select distinct(assigned_to) from project_managemnt
+
+/* Q15 : Show tasks whose names contain the word “Planning” */
+
+select * from project_managemnt
+where task_name like '%Planning%'
+
+/*Q16 : Find the earliest starting task and its project. */
+
+select project_name, task_name, start_date from project_managemnt
+order by start_date
+
+/* Q17 : Count how many tasks are completed (Progress = 100%) in each project. */
+
+select project_name, count(*) as total_task from project_managemnt
+where progress = '100%'
+group by project_name
+
+/* Q18 : Find the average Progress for tasks in the Development project. */
+
+select avg(cast(replace(progress,'%','') as decimal)) as avg_prog
+from project_managemnt
+where project_name like 'Development'
+
+/* Q19 : Show the top 3 tasks that took the most Days_required. */
+
+select task_name, days_required from project_managemnt
+order by days_required desc
+limit 3
+
+/*Q20 : For each project, show the maximum Days_required of any task. */
+
+select project_name, max(days_required) as max_day from project_managemnt
+group by project_name
+order by max_day desc
+
+/* Q21 : Find which person has the most tasks assigned. */
+
+select assigned_to, count(assigned_to) as total_assigned
+from project_managemnt
+group by assigned_to
+order by total_assigned desc
+limit 4
+
+/* THANKYOU */
